@@ -1,0 +1,103 @@
+
+body,
+p,
+dl,
+dd,
+ul,
+ol,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+table,
+tr,
+td,
+fieldset,
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( #e6d4ff,#bae1ff);
+
+}
+
+.box {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: zpq 100s linear infinite;
+}
+
+.box:hover {
+    animation: zpq 100s linear infinite paused;
+}
+
+@keyframes zpq {
+    from {
+    transform: rotateX(-20deg) rotateY(0deg);
+    }
+
+    to {
+    transform: rotateX(-20deg) rotateY(360deg);
+    }
+}
+
+.box img {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-box-reflect: below 2px linear-gradient(rgba(255, 255, 255, 0) 14%, rgba(255, 255, 255, 1) 90%);
+    box-shadow: 0 5px 5px #333;
+
+}
+
+.box img:nth-child(1) {
+    transform: translateZ(420px);
+}
+
+.box img:nth-child(2) {
+    transform: rotateY(40deg) translateZ(420px);
+}
+
+.box img:nth-child(3) {
+    transform: rotateY(80deg) translateZ(420px);
+}
+
+.box img:nth-child(4) {
+    transform: rotateY(120deg) translateZ(420px);
+}
+
+.box img:nth-child(5) {
+    transform: rotateY(160deg) translateZ(420px);
+}
+
+.box img:nth-child(6) {
+    transform: rotateY(200deg) translateZ(420px);
+}
+
+.box img:nth-child(7) {
+    transform: rotateY(240deg) translateZ(420px);
+}
+
+.box img:nth-child(8) {
+    transform: rotateY(280deg) translateZ(420px);
+}
+
+.box img:nth-child(9) {
+    transform: rotateY(320deg) translateZ(420px);
+}
